@@ -11,6 +11,8 @@ const Article = ({ title, text, tags, image, alt }) => {
           </p>
         ))}
       </div>
+      {image && <img className="sm:p-4" src={image} />}
+      {image && alt && <span className="sr-only">{alt}</span>}
     </div>
   );
 };
